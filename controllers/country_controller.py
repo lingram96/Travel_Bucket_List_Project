@@ -24,7 +24,8 @@ def create_country():
     capital = request.form['capital_name']
     continent = request.form['continent']
     visited = request.form['visited']
-    country = Country(name, capital, continent, visited)
+    plan = request.form ['plan']
+    country = Country(name, capital, continent, visited, plan)
     country_repository.save(country)
     return redirect('/countries')
 

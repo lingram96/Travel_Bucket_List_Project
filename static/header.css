@@ -1,0 +1,16 @@
+header{
+    background-image: url(/static/imgs/cartographer.png);
+    padding: 15px;
+    margin-bottom: -10px;
+}
+
+
+nav > ul{
+    list-style: none;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+

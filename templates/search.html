@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="search-bar">
+    <div class="form-area">
+        <h2>Find City or Country</h2>
+    </div>
+    <div class="search-wrap">
+        <form class="search-form" action="#" method="POST">
+            <div class="input-field">
+                <input type="text" name="city" placeholder="City/Country...">
+            </div>
+        
+            <div class="search-btn">
+                <button class="search-btn" type="submit">Search</button>
+            </div>
+        </form>
+
+        {% for city in cities %}
+        <tr>
+            <td>{{city.name}}</td>
+        </tr>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock  %}

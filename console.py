@@ -7,16 +7,16 @@ import repositories.city_repository as city_repository
 city_repository.delete_all()
 country_repository.delete_all()
 
-country_1 = Country("Italy", "Rome", "Europe", False)
+country_1 = Country("Italy", "Rome", "Europe", False, "Shop")
 country_repository.save(country_1)
 
-country_2 = Country("Canada", "Ottawa", "North America", True)
+country_2 = Country("Canada", "Ottawa", "North America", True, "Shop")
 country_repository.save(country_2)
 
-country_3 = Country("Portugal", "Lisbon", "Europe", False)
+country_3 = Country("Portugal", "Lisbon", "Europe", False, "Shop")
 country_repository.save(country_3)
 
-country_4 = Country("Spain", "Madrid", "Europe", False)
+country_4 = Country("Spain", "Madrid", "Europe", False, "Shop")
 country_repository.save(country_4)
 
 city_1 = City("Rome", country_1, "Vatican", False)

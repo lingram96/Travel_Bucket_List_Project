@@ -6,13 +6,14 @@ CREATE TABLE countries(
     name VARCHAR(255),
     capital VARCHAR(255),
     continent VARCHAR(255),
-    visited BOOLEAN
+    visited BOOLEAN,
+    plan VARCHAR(255)
 );
 
 CREATE TABLE cities(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    country_id INT REFERENCES countries(id)
+    country_id INT REFERENCES countries(id),
     sight VARCHAR(255),
-    visited BOOLEAN,
+    visited BOOLEAN
 );

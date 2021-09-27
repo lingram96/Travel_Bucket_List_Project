@@ -1,0 +1,72 @@
+/* body{
+    background-color: tan;
+    font-family: 'Lucida Sans','Lucida Grande', 'Lucida Sans Unicode';
+} */
+
+body {
+    background: white;
+    color:steelblue;
+    font-family: 'Trebuchet MS';
+    padding: 0px;
+    margin: 0px;
+  }
+
+p{
+    margin-left: 25px;
+}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    color: steelblue;
+    margin-bottom: 20px;
+  }
+  
+  a, a:link, a:visited {
+    color: steelblue;
+    text-decoration: none;
+  }
+  
+  a:hover, a:active, a:focus {
+    color:dodgerblue;
+  }
+  
+  nav {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 25px;
+  }
+  
+  nav ul li {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+  }
+  
+  main {
+    padding: 25px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex--row {
+    flex-direction: row;
+  }
+  
+  #content {
+    border-left: 1px solid #254E70;
+    padding-left: 25px;
+  }
+  
