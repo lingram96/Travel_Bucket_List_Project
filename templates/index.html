@@ -1,16 +1,25 @@
 {% extends "base.html" %}
 {% block  content %}
+<div>
 <p class="btn--wrapper">
-    <a class="btn btn--action" href="/cities/new">New City</a>
+    <a class="btn btn--action" href="/countries/visited">Countries I've Visited</a>
   </p>
   <p class="btn--wrapper">
-    <a class="btn btn--action" href="/countries/new">New Country</a>
+    <a class="btn btn--action" href="/countries/tovisit">Countries I Need to Visit</a>
   </p>
-  
+</div>
 <p class="btn--wrapper">
-    <a class="btn btn--action" href="/trips/been">Places I've Been</a>
+    <a class="btn btn--action" href="/cities/visited">Cities I've Visited</a>
   </p>
   <p class="btn--wrapper">
-    <a class="btn btn--action" href="/trips/togo">Places I Need to Go To</a>
+    <a class="btn btn--action" href="/cities/tovisit">Cities I Need to Visit</a>
   </p>
+  <div>
+    <p class="btn--wrapper">
+        <a class="btn btn--action" href="/cities/new">New City</a>
+      </p>
+      <p class="btn--wrapper">
+        <a class="btn btn--action" href="/countries/new">New Country</a>
+      </p>
+  </div>
 {% endblock  %}

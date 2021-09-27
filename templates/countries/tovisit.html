@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Countries I Need to Visit</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Capital</th>
+  </tr>
+
+  {% for country in countries %}
+  <tr>
+    {% if country.visited == False %}
+    <td><a href="/countries/{{ country.id }}"> {{country.name}} </a></td>
+    <td>|</td>
+    <td>{{ country.capital }}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+</table>
+{% endblock %}

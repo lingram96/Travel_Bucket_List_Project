@@ -2,11 +2,12 @@
 
 {% block content %}
 <div>
-    <p>{{city.name}}</p>
+    <h1>{{city.name}}</h1>
     <hr>
-    <p>{{city.country.name}}</p>
+    <h3>{{city.country.name}}</h3>
     <p>{{city.sight}}</p>
     <p>Visited? {{city.visited}}</p>
     <p><a href="/cities/{{city.id}}/edit">Edit</a></p>
 </div>
 {% endblock %}
+

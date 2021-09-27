@@ -55,3 +55,14 @@ def update_country(id):
 def delete_country(id):
     country_repository.delete(id)
     return redirect('/countries')
+
+@countries_blueprint.route("/countries/visited")
+def countries_visited():
+    countries = country_repository.select_all()
+    return render_template("countries/visited.html", countries = countries)
+
+@countries_blueprint.route("/countries/tovisit")
+def countries_tovisit():
+    countries = country_repository.select_all()
+    return render_template("countries/tovisit.html", countries = countries)
+
