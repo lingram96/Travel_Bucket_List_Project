@@ -12,8 +12,7 @@ CREATE TABLE countries(
 CREATE TABLE cities(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    info VARCHAR(255),
+    country_id INT REFERENCES countries(id)
     sight VARCHAR(255),
     visited BOOLEAN,
-    countries_id INT REFERENCES countries(id)
 );

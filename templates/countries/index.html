@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Countries</h1>
+
+<p class="btn--wrapper">
+    <a class="btn btn--action" href="/countries/new">New Country</a>
+  </p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Visited</th>
+  </tr>
+  {% for city in cities %}
+  <tr>
+    <td><a href="/countries/{{ country.id }}"> {{country.name}} </a></td>
+    <td>|</td>
+    <td>{{ country.visited }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

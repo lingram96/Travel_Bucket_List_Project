@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Cities</h1>
+
+<p class="btn--wrapper">
+    <a class="btn btn--action" href="/cities/new">Add New City</a>
+  </p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Visited</th>
+  </tr>
+
+  {% for city in cities %}
+  <tr>
+    <td><a href="/cities/{{ city.id }}"> {{city.name}} </a></td>
+    <td>|</td>
+    <td>{{ city.visited }}</td>
+    <td>|</td>
+    <td><a class="delete-form" href="/cities/{{ city.id }}/delete" method="POST">Delete</a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
+

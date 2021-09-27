@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/cities/{{city.id}}" method="post">
+<div>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="{{city.name}}" required autofocus>
+</div>
+<div>
+    <label for="sight">Sight</label>
+    <input type="text" id="sight" name="sight" value="{{city.sight}}" required>
+</div>
+
+<div>
+    <label for="visited">Visited:</label>
+    <select id="visited" name="visited">
+        <option value="true" {% if city.visited == True %} selected="selected" {% endif %}>Yes</option>
+        <option value="false" {% if city.visited == False %} selected="selected" {% endif %}>No</option>
+    </select>
+</div>
+
+
+<button type="submit">Update City</button>
+
+</form>
+
+{% endblock %}

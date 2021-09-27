@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add a Country</h1>
+
+<form action="/countries" method="post">
+  <label for="country">Select a country:</label>
+    <select name="city_id" id="city">
+      {% for country in countries %}
+      <option value="{{ country.id }}">{{ country.name }}</option>
+      {% endfor %}
+    </select>
+  
+  <label for="city">Select a city:</label>
+    <select name="city_id" id="city">
+      {% for city in cities %}
+      <option value="{{ city.id }}">{{ city.name }}</option>
+      {% endfor %}
+    </select>
+  
+
+  <label for="plan">Add a Plan</label>
+  <textarea name="plan" id="plan" cols="30" rows="10"></textarea>
+  <input class="btn btn--action" type='submit' value="Add Country">
+</form>
+
+{% endblock %}
