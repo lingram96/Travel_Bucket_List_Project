@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/countries/{{country.id}}" method="post">
+<div>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="{{country.name}}" required autofocus>
+</div>
+<div>
+    <label for="capital">Capital</label>
+    <input type="text" id="capital" name="capital" value="{{country.capital }}" required>
+</div>
+<div>
+    <label for="continent">Continent</label>
+    <input type="text" id="continent" name="continent" value="{{country.continent }}" required>
+</div>
+
+<div>
+    <label for="visited">Visited:</label>
+    <select id="visited" name="visited">
+        <option value="true" {% if country.visited == True %} selected="selected" {% endif %}>True</option>
+        <option value="false" {% if country.visited == False %} selected="selected" {% endif %}>False</option>
+    </select>
+</div>
+
+
+<button type="submit">Update Country</button>
+
+</form>
+
+{% endblock %}

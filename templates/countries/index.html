@@ -4,19 +4,27 @@
 <h1>Countries</h1>
 
 <p class="btn--wrapper">
-    <a class="btn btn--action" href="/countries/new">New Country</a>
+    <a class="btn btn--action" href="/countries/new">Add New Country</a>
   </p>
+
 <table>
   <tr>
     <th>Name</th>
     <th></th>
+    <th>Capital</th>
+    <th></th>
     <th>Visited</th>
   </tr>
-  {% for city in cities %}
+
+  {% for country in countries %}
   <tr>
     <td><a href="/countries/{{ country.id }}"> {{country.name}} </a></td>
     <td>|</td>
+    <td>{{ country.capital }}</td>
+    <td>|</td>
     <td>{{ country.visited }}</td>
+    <td>|</td>
+    <td><form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST"><input class="delete" type="submit" value="Delete"></form></td>
   </tr>
   {% endfor %}
 </table>

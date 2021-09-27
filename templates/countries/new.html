@@ -4,24 +4,34 @@
 <h1>Add a Country</h1>
 
 <form action="/countries" method="post">
-  <label for="country">Select a country:</label>
-    <select name="city_id" id="city">
-      {% for country in countries %}
-      <option value="{{ country.id }}">{{ country.name }}</option>
-      {% endfor %}
-    </select>
-  
-  <label for="city">Select a city:</label>
-    <select name="city_id" id="city">
-      {% for city in cities %}
-      <option value="{{ city.id }}">{{ city.name }}</option>
-      {% endfor %}
-    </select>
-  
+    <div>
+      <label for="city">New country:</label>
+      <input type="text" name="country_name" id="country" placeholder="Country" required>
+    </div>
+
+  <div>
+  <label for="city">Add a Capital:</label>
+  <input type="text" name="capital_name" id="capital" placeholder="Capital" required>
+  </div>
+
+  <div>
+    <label for="continent">Continent:</label>
+    <input type="text" name="continent" id="continent" placeholder="Continent" required>
+    </div>
+
+    <div>
+      <label for="visited">Visited:</label>
+      <select id="visited" name="visited">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+      </select>
+  </div>
 
   <label for="plan">Add a Plan</label>
   <textarea name="plan" id="plan" cols="30" rows="10"></textarea>
+  <div>
   <input class="btn btn--action" type='submit' value="Add Country">
+  </div>
 </form>
 
 {% endblock %}

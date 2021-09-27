@@ -20,7 +20,7 @@
     <td>|</td>
     <td>{{ city.visited }}</td>
     <td>|</td>
-    <td><a class="delete-form" href="/cities/{{ city.id }}/delete" method="POST">Delete</a></td>
+    <td><form class="delete-form" action="/cities/{{ city.id }}/delete" method="POST"><input class="delete" type="submit" value="Delete"></form></td>
   </tr>
   {% endfor %}
 </table>

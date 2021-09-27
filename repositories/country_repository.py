@@ -21,7 +21,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
-        country = City(row['name'], row['capital'], row['continent'], row['visited'], row['id'])
+        country = Country(row['name'], row['capital'], row['continent'], row['visited'], row['id'])
         countries.append(country)
     return countries
 
@@ -39,8 +39,8 @@ def select(id):
 
 def update(country):
     sql = "UPDATE countries SET (name, capital, continent, visited) = (%s, %s, %s, %s) WHERE id = %s"
-    values = [country.name, country.capital, country.continent, country.visited]
-    run_sql = (sql, values)
+    values = [country.name, country.capital, country.continent, country.visited, country.id]
+    run_sql (sql, values)
 
 
 def delete_all():
