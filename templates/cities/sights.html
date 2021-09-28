@@ -1,17 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Cities I've Visited</h1>
+<h1>Sights I've Seen</h1>
 
 <table>
   <tr>
-    <th>City Name</th>
+    <th>Name</th>
+    <th></th>
+    <th>Country</th>
   </tr>
 
   {% for city in cities %}
   <tr>
     {% if city.visited == True %}
-    <td><a href="/cities/{{ city.id }}"> {{city.name}} </a></td>
+    <td><a href="/cities/{{ city.id }}"> {{city.sight}} </a></td>
+    <td>|</td>
+    <td>{{ city.country.name }}</td>
   </tr>
   {% endif %}
   {% endfor %}

@@ -1,12 +1,7 @@
-/* body{
-    background-color: tan;
-    font-family: 'Lucida Sans','Lucida Grande', 'Lucida Sans Unicode';
-} */
-
 body {
-    background: white;
-    color:steelblue;
-    font-family: 'Trebuchet MS';
+    background: #252627;
+    color:#FFF9FB;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0px;
     margin: 0px;
   }
@@ -23,17 +18,17 @@ p{
   
   h1 {
     font-size: 1.8em;
-    color: steelblue;
+    color:#FFF9FB;
     margin-bottom: 20px;
   }
   
   a, a:link, a:visited {
-    color: steelblue;
+    color: #FFF9FB;
     text-decoration: none;
   }
   
   a:hover, a:active, a:focus {
-    color:dodgerblue;
+    color:#D6BA73;
   }
   
   nav {

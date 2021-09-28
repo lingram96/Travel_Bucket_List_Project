@@ -4,6 +4,8 @@ from models.city import City
 from models.country import Country
 import repositories.country_repository as country_repository
 
+import pdb
+
 def save(city):
     sql = "INSERT INTO cities (name, country_id, sight, visited) VALUES (%s, %s, %s, %s) RETURNING *"
     values = [city.name, city.country.id, city.sight, city.visited]
@@ -21,7 +23,7 @@ def select_all():
 
     for row in results:
         country = country_repository.select(row['country_id'])
-        city = Country(row['name'], country, row['sight'], row['visited'], row['id'])
+        city = City(row['name'], country, row['sight'], row['visited'], row['id'])
         cities.append(city)
     return cities 
 

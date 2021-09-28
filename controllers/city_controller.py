@@ -9,6 +9,7 @@ cities_blueprint = Blueprint("cities", __name__)
 @cities_blueprint.route("/cities")
 def cities():
     cities = city_repository.select_all()
+    # pdb.set_trace()
     return render_template("cities/index.html", cities = cities)
 
 
@@ -42,6 +43,7 @@ def edit_city(id):
     city = city_repository.select(id)
     return render_template('cities/edit.html', city = city)
 
+
 @cities_blueprint.route("/cities/<id>", methods=["POST"])
 def update_city(id):
     found_city = city_repository.select(id)
@@ -68,3 +70,8 @@ def cities_visited():
 def cities_tovisit():
     cities = city_repository.select_all()
     return render_template("cities/tovisit.html", cities = cities)
+
+@cities_blueprint.route("/cities/sights")
+def city_sights():
+    cities = city_repository.select_all()
+    return render_template("cities/sights.html", cities = cities)

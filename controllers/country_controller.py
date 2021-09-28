@@ -47,7 +47,8 @@ def update_country(id):
     capital = request.form['capital']
     continent = request.form['continent']
     visited = request.form['visited']
-    country = Country(name, capital, continent, visited, id)
+    plan = request.form['plan']
+    country = Country(name, capital, continent, visited, plan, id)
     country_repository.update(country)
     return redirect('/countries')
    

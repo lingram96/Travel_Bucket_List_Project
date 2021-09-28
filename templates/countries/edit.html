@@ -22,6 +22,11 @@
         <option value="false" {% if country.visited == False %} selected="selected" {% endif %}>False</option>
     </select>
 </div>
+<div>
+    <label for="plan">Change of Plan?</label>
+    <input type="text" id="plan" name="plan" value="{{country.plan }}" required>
+</div>
+
 
 
 <button type="submit">Update Country</button>

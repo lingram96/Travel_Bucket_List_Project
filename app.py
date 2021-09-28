@@ -11,6 +11,7 @@ app.register_blueprint(countries_blueprint)
 def home():
     return render_template('index.html')
 
+
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     return render_template('search.html')
