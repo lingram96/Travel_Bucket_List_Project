@@ -1,15 +1,13 @@
 body {
-    background: #252627;
+    background-image: url(/static/imgs/ice-age.png);
+    background-color: #141311;
     color:#FFF9FB;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0px;
     margin: 0px;
   }
 
-p{
-    margin-left: 25px;
-}
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: "Lucida Console", Monaco, monospace;
     margin: 0px;
@@ -38,8 +36,10 @@ p{
   }
   
   nav ul li {
+    margin-top: -10px;
     margin-bottom: 15px;
     text-transform: uppercase;
+    padding-top: 15px;
   }
   
   ul {
@@ -51,5 +51,6 @@ p{
   main {
     padding: 25px;
   }
+  
   
   

@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
-
 {% block content %}
+<link rel="stylesheet" href="/static/cities.css">
+
 <h1>Cities</h1>
 
-<p class="btn--wrapper">
+<h3 class="btn--wrapper">
     <a class="btn btn--action" href="/cities/new">Add New City</a>
-  </p>
+</h3>
 
 <table>
   <tr>
@@ -19,7 +20,6 @@
     <td><a href="/cities/{{ city.id }}"> {{city.name}} </a></td>
     <td>|</td>
     <td>{{ city.visited }}</td>
-    <td>|</td>
     <td><form class="delete-form" action="/cities/{{ city.id }}/delete" method="POST"><input class="delete" type="submit" value="Delete"></form></td>
   </tr>
   {% endfor %}

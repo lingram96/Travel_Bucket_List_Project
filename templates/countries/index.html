@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
-
 {% block content %}
+<link rel="stylesheet" href="/static/countries.css">
+
+
 <h1>Countries</h1>
 
-<p class="btn--wrapper">
+<h3 class="btn--wrapper">
     <a class="btn btn--action" href="/countries/new">Add New Country</a>
-  </p>
+</h3>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th>Country</th>
     <th></th>
     <th>Capital</th>
     <th></th>
-    <th>Visited</th>
+    <th>Have I Been?</th>
   </tr>
 
   {% for country in countries %}
@@ -23,8 +25,7 @@
     <td>{{ country.capital }}</td>
     <td>|</td>
     <td>{{ country.visited }}</td>
-    <td>|</td>
-    <td><form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST"><input class="delete" type="submit" value="Delete"></form></td>
+    <td><form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST"><input class="delete" type="submit" value="Remove"></form></td>
   </tr>
   {% endfor %}
 </table>

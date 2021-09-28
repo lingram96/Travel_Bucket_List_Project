@@ -5,10 +5,13 @@
     display: grid;
 }
 
+.travel p a{
+    color: #283845;
+}
+
 .btn{
     border-radius: 15px;
-    background: #D6BA73;
-    color: #fff;
+    background: #DCCCA3;
     padding: 10px;
     text-decoration: none;
     text-align: center;
@@ -44,36 +47,20 @@
   }
 
 .btn:hover{
-    color: #252627;
+    color: #141311;;
+    background-color: #b69e61;
     transition: 0s 0s;
 }
 
-.country_visited img {
-    width: 25%;
-  }
-
-.country_not_visited img {
-    width: 25%;
-  }
-
-.city_visited img {
-    width: 25%;
-  }
-
-.city_not_visited img {
-    width: 25%;
-  }
-
-.new_city img{
-    width: 25%;
-}
-
-.new_country img{
-    width: 25%;
-}
 
 .container{
-    display:flex;
+    display:inline-flex;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    gap:20px;
+}
+.travel{
+    width:425px;
+    text-align:center;
+    align-items:center;
 }
