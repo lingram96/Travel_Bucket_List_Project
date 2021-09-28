@@ -14,7 +14,7 @@ def home():
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
-    return render_template('search.html')
+    return render_template('search.html', title = "Search -")
 
 
 if __name__ == '__main__':

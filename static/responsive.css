@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    .row {
+    grid-auto-flow: row;
+    grid-template-columns: 100%;;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .main-nav a {
+      padding: 0;
+    }
+  }
+
+@media (max-width: 767px) {
+  .main-nav {
+    position: fixed;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    display: grid;
+  }
+}
+
+.container{
+  padding: 25px;
+}
