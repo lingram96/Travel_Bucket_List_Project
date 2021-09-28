@@ -1,5 +1,5 @@
 .homepage{
-    padding-top: 25px;
+    padding-top: 75px;
     padding-bottom: 75px;
     margin-left: 25px;
     display: grid;
@@ -59,8 +59,9 @@
     justify-content: center;
     gap:20px;
 }
+
 .travel{
-    width:425px;
+    width:500px;
     text-align:center;
     align-items:center;
 }

@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+<link rel="stylesheet" href="/static/newcountry.css">
+
+<h1>Edit City</h1>
 
 <form action="/cities/{{city.id}}" method="post">
 <div>
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" value="{{city.name}}" required autofocus>
+    <input type="text" id="name" name="name" value="{{city.name}}" required>
 </div>
 <div>
     <label for="sight">Sight</label>
@@ -13,15 +16,15 @@
 
 <div>
     <label for="visited">Visited:</label>
-    <select id="visited" name="visited">
+    <select id="visited" name="visited" autofocus>
         <option value="true" {% if city.visited == True %} selected="selected" {% endif %}>True</option>
         <option value="false" {% if city.visited == False %} selected="selected" {% endif %}>False</option>
     </select>
 </div>
 
-
-<button type="submit">Update City</button>
-
+<div>
+<button class="btnadd" type="submit">Update City</button>
+</div>
 </form>
 
 {% endblock %}

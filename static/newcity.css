@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    padding: 25px;
+}
+
+.btnadd{
+    border-radius: 15px;
+    background-color: #DCCCA3;
+    color: #283845;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btnadd:hover{
+        color: #141311;;
+        background-color: #b69e61;
+        transition: 0s 0s;
+}
+
+form {
+    display: grid;
+    grid-gap : 20px;
+    text-align: center;
+    width: 150px;
+    position: relative;
+    margin-left: 550px;
+
+}
+
+input{
+    background: rgba(0,0,0,.1);
+    color: white;
+    margin-top: 10px;
+}
+
+::placeholder{
+    color: #DCCCA3;
+}
+
+textarea{
+    background:rgba(0,0,0,.1);
+    color: white;
+}
+
+select{
+    background: rgba(0,0,0,.1);
+    color: #DCCCA3;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+}

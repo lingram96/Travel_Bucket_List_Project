@@ -1,26 +1,27 @@
 {% extends 'base.html' %}
-
 {% block content %}
+<link rel="stylesheet" href="/static/newcountry.css">
+
 <h1>Add a Country</h1>
 
 <form action="/countries" method="post">
     <div>
-      <label for="city">New country:</label>
-      <input type="text" name="country_name" id="country" placeholder="Country" required>
+      <label for="city">New country</label>
+      <input type="text" name="country_name" id="country" placeholder="Country" required autofocus>
     </div>
 
   <div>
-  <label for="city">Add a Capital:</label>
+  <label for="city">Add a Capital</label>
   <input type="text" name="capital_name" id="capital" placeholder="Capital" required>
   </div>
 
   <div>
-    <label for="continent">Continent:</label>
+    <label for="continent">Continent</label>
     <input type="text" name="continent" id="continent" placeholder="Continent" required>
     </div>
 
     <div>
-      <label for="visited">Visited:</label>
+      <label for="visited">Visited?</label>
       <select id="visited" name="visited">
           <option value="Yes">Yes</option>
           <option value="No">No</option>
@@ -28,9 +29,9 @@
   </div>
 
   <label for="plan">Add a Plan</label>
-  <textarea name="plan" id="plan" cols="30" rows="10"></textarea>
+  <textarea name="plan" id="plan" cols="20" rows="10" placeholder="What's the plan?"></textarea>
   <div>
-  <input class="btn btn--action" type='submit' value="Add Country">
+  <input class="btnadd" type='submit' value="Add Country">
   </div>
 </form>
 

@@ -1,35 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
+<link rel="stylesheet" href="/static/newcity.css">
+<h1>Add a City</h1>
 
 <form action="/cities" method="post">
 <div>
     <label for="name">City</label>
-    <input type="text" id="name" name="name" placeholder="name" required autofocus>
+    <input type="text" id="name" name="name" placeholder="City Name" required autofocus>
 </div>
 <div>
     <label for="sight">Sight</label>
-    <input type="text" id="sight" name="sight" placeholder="sight" required>
+    <input type="text" id="sight" name="sight" placeholder="Sight" required>
 </div>
 
 <div>
-    <label for="visited">Visited:</label>
-    <select id="visited" name="visited">
+    <label for="visited">Visited?</label>
+    <select id="visited" name="Visited">
         <option value="Yes">Yes</option>
         <option value="No">No</option>
     </select>
 </div>
 
 <div>
-    <label for="country">Select Country:</label>
+    <label for="country">Select From Countries</label>
     <select id="country" name="country_id">
         {% for country in countries %}
             <option value="{{ country.id }}">{{ country.name }}</option>
         {% endfor %}
     </select>
 </div>
-
-<button type="submit">Add City</button>
-
+<div>
+<button class="btnadd" type="submit">Add City</button>
+</div>
 </form>
 
 {% endblock %}
