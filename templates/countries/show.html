@@ -9,6 +9,8 @@
     <p>{{country.continent}}</p>
     <p>Visited? {{country.visited}}</p>
     <p>What's the plan? {{country.plan}}</p>
-    <p><a href="/countries/{{country.id}}/edit">Edit</a></p>
+    <div class="edit">
+    <p><a class="btn" href="/countries/{{country.id}}/edit">Edit</a></p>
+    </div>
 </div>
 {% endblock %}
