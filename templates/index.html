@@ -2,29 +2,46 @@
 {% block  content %}
 <link rel="stylesheet" href="/static/style.css">
 <link rel="stylesheet" href="/static/header.css">
-<link rel="stylesheet" href="/static/footer.css">
 <link rel="stylesheet" href="/static/responsive.css">
+<link rel="stylesheet" href="/static/index.css">
 
-<div>
-<p class="btn--wrapper">
-    <a class="btn btn--action" href="/countries/visited">Countries I've Visited</a>
-  </p>
-  <p class="btn--wrapper">
-    <a class="btn btn--action" href="/countries/tovisit">Countries I Need to Visit</a>
+<section class="homepage">
+<div class="container">
+<p class="country_visited">
+  <img src="/static/imgs/pexels-taryn-elliott-3889991.jpeg" alt="">
+    <a class="btn" href="/countries/visited">Countries I've Visited</a>
   </p>
 </div>
-<p class="btn--wrapper">
-    <a class="btn btn--action" href="/cities/visited">Cities I've Visited</a>
+<div class="container">
+  <p class="country_not_visited">
+    <img src="/static/imgs/kira-auf-der-heide.jpeg" alt="">
+    <span><a class="btn" href="/countries/tovisit">Countries I Need to Visit</a></span>
   </p>
-  <p class="btn--wrapper">
-    <a class="btn btn--action" href="/cities/tovisit">Cities I Need to Visit</a>
+</div>
+<div class="container">
+<p class="city_visited">
+  <img src="/static/imgs/roman-kraft.jpeg" alt="">
+    <a class="btn" href="/cities/visited">Cities I've Visited</a>
   </p>
-  <div>
-    <p class="btn--wrapper">
-        <a class="btn btn--action" href="/cities/new">New City</a>
+</div>
+<div class="container">
+  <p class="city_not_visited">
+    <img src="/static/imgs/denise-jans.jpeg" alt="">
+    <a class="btn" href="/cities/tovisit">Cities I Need to Visit</a>
+  </p>
+</div>
+<div class="container">
+    <p class="new_city">
+      <img src="/static/imgs/pexels-pierre-blaché-2901209.jpeg" alt="">
+        <a class="btn" href="/cities/new">New City</a>
       </p>
-      <p class="btn--wrapper">
-        <a class="btn btn--action" href="/countries/new">New Country</a>
+    </div>
+    <div class="container">
+      <p class="new_country">
+        <img src="/static/imgs/pexels-jaime-reimer-2662116.jpeg" alt="">
+        <a class="btn" href="/countries/new">New Country</a>
       </p>
+      </div>
   </div>
+</section>
 {% endblock  %}

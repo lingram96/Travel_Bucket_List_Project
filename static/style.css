@@ -52,16 +52,4 @@ p{
     padding: 25px;
   }
   
-  .flex {
-    display: flex;
-  }
-  
-  .flex--row {
-    flex-direction: row;
-  }
-  
-  #content {
-    border-left: 1px solid #254E70;
-    padding-left: 25px;
-  }
   

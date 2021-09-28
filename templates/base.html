@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="/static/header.css">
     <link rel="stylesheet" href="/static/footer.css">
     <link rel="stylesheet" href="/static/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Travel Bucket List</title>
 </head>
 <body>
-    <header>
+    <header class="flex flex--row">
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
+            <ul class="main-nav">
+                <li><a href="/"><button class="btn-home"><i class="fa fa-home"></i></button></a></li>
                 <li><a href="/countries">Countries</a></li>
                 <li><a href="/cities">Cities</a></li>
                 <li><a href="/cities/sights">Sights</a></li>
@@ -22,8 +24,8 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <div class="container">
+
+    <div id="content">
         {% block content %}
         {% endblock  %}
     </div>

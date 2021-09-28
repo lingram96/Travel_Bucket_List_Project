@@ -1,0 +1,79 @@
+.homepage{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin-left: 25px;
+    display: grid;
+}
+
+.btn{
+    border-radius: 15px;
+    background: #D6BA73;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.btn:hover span {
+    padding-right: 25px;
+  }
+  
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.btn:hover{
+    color: #252627;
+    transition: 0s 0s;
+}
+
+.country_visited img {
+    width: 25%;
+  }
+
+.country_not_visited img {
+    width: 25%;
+  }
+
+.city_visited img {
+    width: 25%;
+  }
+
+.city_not_visited img {
+    width: 25%;
+  }
+
+.new_city img{
+    width: 25%;
+}
+
+.new_country img{
+    width: 25%;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
