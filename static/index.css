@@ -10,6 +10,7 @@ h1{
     padding-bottom: 75px;
     margin-left: 25px;
     display: grid;
+    
 }
 
 .travel p a{
@@ -66,10 +67,23 @@ h1{
     gap:25px;
     padding: 35px;
     margin-right: 20px;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
 .travel{
     width:450px;
     text-align:center;
     align-items:center;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
