@@ -34,7 +34,7 @@ country_repository.save(country_8)
 country_9 = Country("Slovenia", "Ljubljana", "Europe", True, "See the castle.")
 country_repository.save(country_9)
 
-country_10 = Country("Chile", "Buenos Santiago", "South America", False, "Marble Caves.")
+country_10 = Country("Hungary", "Budapest", "Europe", True, "Eat goulash and go to the baths.")
 country_repository.save(country_10)
 
 city_1 = City("Rome", country_1, "Vatican", True)
@@ -49,8 +49,11 @@ city_repository.save(city_3)
 city_4 = City("Lisbon", country_3, "Belém Tower", False)
 city_repository.save(city_4)
 
-city_5 = City("Seville", country_4, "Royal Palace", False)
+city_5 = City("Barcelona", country_4, "Royal Palace", False)
 city_repository.save(city_5)
+
+city_6 = City("Budapest", country_10, "Széchenyi Thermal Bath", True)
+city_repository.save(city_6)
 
 print(country_repository.select_all()[0].id)
 print(city_repository.select_all()[0].id)
