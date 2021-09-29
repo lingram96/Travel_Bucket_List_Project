@@ -19,7 +19,7 @@
 
 {% if city.country.name == "Italy" %}
         <div class="img">
-            <img src="/static/imgs/rome.jpeg" width=400>
+            <img src="/static/imgs/{{city.country.name}}/{{city.name}}.jpeg" width=400>
         </div>
 {% elif city.country.name == "Canada" %}
         <div class="img">
