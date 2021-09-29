@@ -15,3 +15,7 @@ table{
 table th{
     text-decoration: underline;
 }
+
+hr{
+    width: 25%;
+}
