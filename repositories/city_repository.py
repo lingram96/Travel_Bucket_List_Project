@@ -24,7 +24,7 @@ def select_all():
     for row in results:
         country = country_repository.select(row['country_id'])
         city = City(row['name'], country, row['sight'], row['visited'], row['id'])
-        cities.append(city)
+        cities.insert(0, city)
     return cities 
 
 

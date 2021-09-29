@@ -22,7 +22,7 @@ def select_all():
 
     for row in results:
         country = Country(row['name'], row['capital'], row['continent'], row['visited'], row['plan'], row['id'])
-        countries.append(country)
+        countries.insert(0, country)
     return countries
 
 
