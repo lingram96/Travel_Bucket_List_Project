@@ -27,6 +27,7 @@ body {
   
   a:hover, a:active, a:focus {
     color:#D6BA73;
+    margin-left: 2px;
   }
   
   nav {

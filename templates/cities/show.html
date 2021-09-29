@@ -7,9 +7,17 @@
     <hr>
     <h3>{{city.country.name}}</h3>
     <p>{{city.sight}}</p>
-    <p>Visited? {{city.visited}}</p>
+    <p>Have I been yet?:</p>
+    {% if city.visited == True %}
+    <p>Yes!</p>
+    {% else %}
+    <p>Not yet!</p>
+    {% endif %}
     <div class="edit">
     <p><a class="btn" href="/cities/{{city.id}}/edit">Edit</a></p>
+    </div>
+    <div>
+
     </div>
 </div>
 {% endblock %}

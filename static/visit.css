@@ -8,8 +8,11 @@ h3{
 }
 
 table{
-    margin-top:40px;
-    margin-left:325px;
+    display: grid;
+    grid-gap : 20px;
+    width: 150px;
+    position: relative;
+    margin-left: 550px;
 }
 
 table th{

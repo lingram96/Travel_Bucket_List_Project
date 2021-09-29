@@ -7,7 +7,12 @@
     <hr>
     <h3>{{country.capital}}</h3>
     <p>{{country.continent}}</p>
-    <p>Visited? {{country.visited}}</p>
+    <p>Have I been yet?:</p>
+    {% if country.visited == True %}
+    <p>Yes!</p>
+    {% else %}
+    <p>Not yet!</p>
+    {% endif %}
     <p>What's the plan? {{country.plan}}</p>
     <div class="edit">
     <p><a class="btn" href="/countries/{{country.id}}/edit">Edit</a></p>

@@ -19,9 +19,14 @@
   <tr>
     <td><a href="/cities/{{ city.id }}"> {{city.name}} </a></td>
     <td>|</td>
-    <td>{{ city.visited }}</td>
+    {% if city.visited == True %}
+    <td><span>Yes!</span></td>
+    {% else %}
+    <td><span>Not yet!</span></td>
+    {% endif %}
+</div>
     <td><form class="delete-form" action="/cities/{{ city.id }}/delete" method="POST"><input class="delete" type="submit" value="Remove"></form></td>
-  </tr>
+</tr>
   {% endfor %}
 </table>
 {% endblock %}

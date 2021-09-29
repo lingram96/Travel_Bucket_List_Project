@@ -24,7 +24,12 @@
     <td>|</td>
     <td>{{ country.capital }}</td>
     <td>|</td>
-    <td>{{ country.visited }}</td>
+    {% if country.visited == True %}
+    <td><span>Yes!</span></td>
+    {% else %}
+    <td><span>Not yet!</span></td>
+    {% endif %}
+</div>
     <td><form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST"><input class="delete" type="submit" value="Remove"></form></td>
   </tr>
   {% endfor %}

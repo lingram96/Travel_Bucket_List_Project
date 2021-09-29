@@ -34,6 +34,9 @@ country_repository.save(country_8)
 country_9 = Country("Slovenia", "Ljubljana", "Europe", True, "See the castle.")
 country_repository.save(country_9)
 
+country_10 = Country("Chile", "Buenos Santiago", "South America", False, "Marble Caves.")
+country_repository.save(country_10)
+
 city_1 = City("Rome", country_1, "Vatican", True)
 city_repository.save(city_1)
 
